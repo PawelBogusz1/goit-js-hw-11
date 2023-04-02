@@ -70,7 +70,7 @@ async function getPhotos(request, pageCount) {
 function createList(photosObj) {
     const photos = photosObj.reduce((acc, photo) => acc +
         `<div class="photo-card">
-           <a href="${photo.largeImageURL}"><img src="${photo.webformatURL}" alt="${photo.tags}" width = "300" loading="lazy" /></a>
+           <a href="${photo.largeImageURL}"><img class="image"  src="${photo.webformatURL}" alt="${photo.tags}"  loading="lazy" /></a>
            <div class="info">
               <p class="info-item">
               <b>Likes:  </b>${photo.likes}

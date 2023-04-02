@@ -1,28 +1,85 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(177, 207, 248);
+height: 100%;
   line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+  padding-top: 80px;
+
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.btn {
+  min-width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(213, 218, 238, 0.694);
+  border-color: transparent;
+  border-radius: 8px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.btn:hover,
+.btn:focus {
+  background-color: rgba(96, 7, 104, 0.3607843137);
+}
+.search-form{
+ height: 90px;
+    width: 100%;
+    background: #061f8f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    font-size: 22px;
+    
+}
+
+
+.search-input {
+  min-width: 180px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-color: transparent;
+  border-radius: 8px;
+
+ 
+}
+
+.search-input:hover,
+.search-input:focus {
+  outline: none;
+}
+
+
+.js-load-btn {
+  display: none;
+}
+
+  .load-more{
+  background-color: #d1d9fa;
+  border-radius: 8px;
+  margin-left: 50%;
+  font-size: 22px;
+  font-weight: bold;
+}
+
